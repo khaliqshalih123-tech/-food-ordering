@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit';
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f8f8f8;
+}
+
+.admin-app {
+  display: flex;
+  min-height: 100vh;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 30px 40px;
+}
+
+button {
+  cursor: pointer;
+  font-family: 'Outfit';
+}
+
+input, select {
+  font-family: 'Outfit';
+}

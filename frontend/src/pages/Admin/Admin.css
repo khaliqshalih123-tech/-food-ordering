@@ -1,0 +1,79 @@
+.admin{
+    margin-top: 100px;
+    min-height: 60vh;
+}
+
+.admin h2{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.admin-loading, .admin-empty{
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.admin-orders-list{
+    width: 100%;
+}
+
+.admin-orders-header{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1.5fr 0.8fr 1.5fr 1.2fr 0.8fr;
+    align-items: center;
+    color: grey;
+    font-size: max(0.9vw, 12px);
+    padding: 0 10px;
+}
+
+.admin-orders-header hr{
+    height: 1px;
+    background-color: #e2e2e2;
+    border: none;
+    margin: 10px 0;
+}
+
+.admin-order-row{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1.5fr 0.8fr 1.5fr 1.2fr 0.8fr;
+    align-items: center;
+    padding: 15px 10px;
+    border-bottom: 1px solid #e2e2e2;
+    font-size: max(0.85vw, 12px);
+}
+
+.admin-order-user{
+    color: #555;
+}
+
+.admin-order-items{
+    color: #555;
+    line-height: 1.4;
+}
+
+.admin-order-address{
+    color: #555;
+    line-height: 1.4;
+    font-size: max(0.8vw, 11px);
+}
+
+.admin-status-select{
+    padding: 6px 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    font-size: 13px;
+    cursor: pointer;
+    outline: none;
+    background: white;
+}
+
+@media (max-width: 900px){
+    .admin-orders-header,
+    .admin-order-row{
+        grid-template-columns: 0.3fr 0.8fr 1fr 0.6fr 1.2fr 1fr 0.6fr;
+        font-size: 11px;
+    }
+}

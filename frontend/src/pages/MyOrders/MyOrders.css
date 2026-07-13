@@ -1,0 +1,145 @@
+.my-orders{
+    margin-top: 100px;
+    min-height: 60vh;
+}
+
+.my-orders h2{
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.my-orders-loading{
+    text-align: center;
+    color: #888;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.my-orders-empty{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.my-orders-empty p{
+    color: #888;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.my-orders-empty button{
+    background-color: tomato;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.my-orders-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.my-order-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.my-order-items{
+    display: flex;
+    gap: 15px;
+    flex: 2;
+    flex-wrap: wrap;
+}
+
+.my-order-item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.my-order-item img{
+    width: 45px;
+    border-radius: 4px;
+}
+
+.my-order-item-name{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.my-order-item-qty{
+    font-size: 12px;
+    color: #888;
+}
+
+.my-order-details{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.my-order-amount{
+    font-size: 15px;
+}
+
+.my-order-address{
+    font-size: 13px;
+    color: #555;
+    line-height: 1.4;
+}
+
+.my-order-items-count{
+    font-size: 13px;
+    color: #888;
+}
+
+.my-order-date{
+    font-size: 12px;
+    color: #aaa;
+}
+
+.my-order-status{
+    flex: 0.5;
+    text-align: right;
+}
+
+.my-order-status-badge{
+    display: inline-block;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+}
+
+.my-order-status-badge.processing{
+    background-color: #ff6b35;
+}
+
+.my-order-status-badge.out{
+    background-color: #f4a261;
+}
+
+.my-order-status-badge.delivered{
+    background-color: #2a9d8f;
+}
+
+@media (max-width: 750px){
+    .my-order-card{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .my-order-status{
+        text-align: left;
+    }
+}

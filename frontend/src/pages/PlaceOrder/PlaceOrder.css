@@ -1,0 +1,100 @@
+.place-order{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.place-order-left{
+    width: 100%;
+    max-width: max(30%,500px);
+}
+
+.place-order-left .title{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.place-order-left input{
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    outline-color: tomato;
+}
+
+.place-order-left .multi-fields{
+    display: flex;
+    gap: 10px;
+}
+
+.place-order-right{
+    width: 100%;
+    max-width: max(40%,500px);
+}
+
+.place-order .cart-total button{
+    margin-top: 30px;
+}
+
+.saved-addresses{
+    margin-bottom: 30px;
+}
+
+.saved-addresses-title{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.saved-address-item{
+    border: 1px solid #c5c5c5;
+    border-radius: 4px;
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.saved-address-item:hover{
+    border-color: tomato;
+}
+
+.saved-address-item.selected{
+    border-color: tomato;
+    background-color: #fff4f2;
+}
+
+.saved-address-item p{
+    margin: 2px 0;
+    font-size: 14px;
+    color: #555;
+}
+
+.save-address-check{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 5px;
+}
+
+.save-address-check input{
+    width: auto;
+    margin: 0;
+}
+
+.save-address-check p{
+    font-size: 14px;
+    color: #555;
+}
+
+.place-order-error{
+    color: tomato;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 10px;
+}
