@@ -9,7 +9,7 @@ const StoreContextProvider = (props) => {
     const [token, setToken] = useState(localStorage.getItem("token") || "");
     const [user, setUser] = useState(null);
 
-    const url = "http://localhost:4000";
+    const url = "https://food-ordering-backend-bm0c.onrender.com";
 
     const loadUserProfile = async () => {
         if (token) {
