@@ -6,8 +6,9 @@ export default defineConfig({
   server: {
     port: 5174
   },
-  proxy: {
-    '/api': 'http://localhost:4000',
-    '/images': 'http://localhost:4000'
+ proxy: {
+    '/api': 'https://food-ordering-backend-bm0c.onrender.com',
+    '/images': 'https://food-ordering-backend-bm0c.onrender.com'
+
   }
 })
